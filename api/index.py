@@ -9,15 +9,17 @@ The trades endpoint combines two independent disclosure systems into one feed,
 tagging each row with its `source` so the UI can tell them apart:
 
   * "insider"  - corporate insiders (officers, directors, 10% owners) filing
-                 SEC Form 4. Read directly from SEC EDGAR (authoritative, free,
+                 SEC Form 4. Read live from SEC EDGAR (authoritative, free,
                  no key). Only open-market purchases (P) and sales (S) are kept.
-  * "congress" - US House & Senate members filing STOCK Act reports. Read from
-                 Financial Modeling Prep, which aggregates the official House
-                 and Senate disclosures into clean JSON. Requires a free API key
-                 in the FMP_API_KEY environment variable; without it the feed
-                 simply falls back to insider trades only.
+  * "congress" - US House & Senate members filing STOCK Act reports. These come
+                 from the official House and Senate disclosure systems, but their
+                 formats (PDFs / a session-gated portal) are too slow and rate-
+                 limited to scrape per request. Instead a scheduled GitHub Action
+                 (scripts/fetch_congress.py) collects them into
+                 data/congress_trades.json, which this app just reads.
 """
 import concurrent.futures
+import json
 import os
 import re
 import time
@@ -56,15 +58,16 @@ TRANSACTION_LABELS = {
     "S": "S - Sale",
 }
 
-# --- Financial Modeling Prep (congressional trades) -----------------------
-FMP_API_KEY = os.environ.get("FMP_API_KEY", "").strip()
-FMP_BASE = "https://financialmodelingprep.com/stable"
-FMP_ENDPOINTS = (("senate-latest", "Senate"), ("house-latest", "House"))
+# --- Congressional trades (pre-collected) ---------------------------------
+# Produced out-of-band by scripts/fetch_congress.py (run on a schedule in CI)
+# and committed to the repo, so the app just reads the file — no scraping,
+# no API key, no per-request latency.
+CONGRESS_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "congress_trades.json")
 
 # --- Shared ----------------------------------------------------------------
 REQUEST_TIMEOUT_SECONDS = 10
 CACHE_TTL_SECONDS = 120
-MAX_TRADES = 80    # combined rows returned to the client
+MAX_TRADES = 100   # combined rows returned to the client
 
 _cache = {"trades": None, "meta": None, "fetched_at": 0}
 
@@ -226,106 +229,30 @@ def fetch_insider_trades():
 
 
 # ==========================================================================
-# Congressional trades (Financial Modeling Prep)
+# Congressional trades (read from the committed data file)
 # ==========================================================================
-def _congress_name(item):
-    first = (item.get("firstName") or "").strip()
-    last = (item.get("lastName") or "").strip()
-    full = f"{first} {last}".strip()
-    if full:
-        return full
-    for key in ("representative", "senator", "name", "office"):
-        value = item.get(key)
-        if value and str(value).strip():
-            return str(value).strip()
-    return "Unknown"
-
-
-def _build_congress_rows(items, chamber):
-    rows = []
-    for item in items:
-        if not isinstance(item, dict):
-            continue
-        ticker = (item.get("symbol") or "").strip()
-        if not ticker:
-            continue  # skip non-stock disclosures (real estate, funds, etc.)
-        trade_type = (item.get("type") or "").strip()
-        district = (item.get("district") or item.get("state") or "").strip()
-        role = f"{chamber}" + (f" · {district}" if district else "")
-        owner = (item.get("owner") or "").strip()
-        if owner and owner.lower() not in ("self", "--", "", "n/a"):
-            role += f" ({owner})"
-        rows.append({
-            "source": "congress",
-            "date": (item.get("transactionDate") or item.get("disclosureDate") or "").strip(),
-            "ticker": ticker,
-            "company": (item.get("assetDescription") or "").strip(),
-            "person": _congress_name(item),
-            "role": role,
-            "tradeType": trade_type or "—",
-            "typeClass": classify_trade(trade_type),
-            "price": "",  # congressional filings disclose ranges, not exact prices
-            "qty": "",
-            "value": (item.get("amount") or "").strip(),  # e.g. "$1,001 - $15,000"
-        })
-    return rows
-
-
-def _sanitize_error(message):
-    """Never let the API key leak into a message that reaches the browser."""
-    return re.sub(r"apikey=[^&\s]+", "apikey=***", str(message))
-
-
-def fetch_congress_trades():
-    """Fetch recent House & Senate trades. Returns (rows, error_message)."""
-    if not FMP_API_KEY:
-        return [], "no_key"
-
-    rows = []
-    error = None
-    for endpoint, chamber in FMP_ENDPOINTS:
-        url = f"{FMP_BASE}/{endpoint}?page=0&limit=100&apikey={FMP_API_KEY}"
-        try:
-            resp = requests.get(url, timeout=REQUEST_TIMEOUT_SECONDS)
-            if resp.status_code in (401, 402, 403):
-                # FMP gates congressional endpoints behind a paid plan; make that
-                # explicit instead of surfacing a raw HTTP error (and its URL).
-                error = (
-                    "This FMP endpoint requires a paid plan "
-                    f"(HTTP {resp.status_code}). Congressional trades are unavailable."
-                )
-                continue
-            resp.raise_for_status()
-            data = resp.json()
-            if isinstance(data, dict):  # FMP returns {"Error Message": ...} on failure
-                error = _sanitize_error(data.get("Error Message") or "unexpected response")
-                continue
-            rows.extend(_build_congress_rows(data, chamber))
-        except Exception as exc:
-            error = _sanitize_error(exc)
-            continue
-    return rows, error
+def load_congress_trades():
+    """Load pre-collected congressional trades. Returns (rows, generated_at)."""
+    try:
+        with open(CONGRESS_DATA_PATH, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, ValueError):
+        return [], None
+    rows = [t for t in data.get("trades", []) if isinstance(t, dict) and t.get("ticker")]
+    return rows, data.get("generated_at")
 
 
 # ==========================================================================
 # Combined feed
 # ==========================================================================
 def build_trades():
-    insider, congress = [], []
-    insider_error = congress_error = None
+    insider, insider_error = [], None
+    try:
+        insider = fetch_insider_trades()  # live from SEC EDGAR
+    except Exception as exc:
+        insider_error = str(exc)
 
-    # Run the two sources concurrently — SEC scraping dominates the latency.
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-        insider_future = pool.submit(fetch_insider_trades)
-        congress_future = pool.submit(fetch_congress_trades)
-        try:
-            insider = insider_future.result()
-        except Exception as exc:
-            insider_error = str(exc)
-        try:
-            congress, congress_error = congress_future.result()
-        except Exception as exc:
-            congress_error = str(exc)
+    congress, congress_as_of = load_congress_trades()  # fast local file read
 
     combined = insider + congress
     # Sort newest-first; ISO date strings sort correctly lexicographically.
@@ -333,17 +260,16 @@ def build_trades():
     combined = combined[:MAX_TRADES]
 
     if not combined:
-        raise ValueError(insider_error or congress_error or "No trades available")
+        raise ValueError(insider_error or "No trades available")
 
     meta = {
-        "congressEnabled": bool(FMP_API_KEY) and congress_error in (None, ""),
         "insiderCount": len(insider),
         "congressCount": len(congress),
+        "congressAsOf": congress_as_of,
+        "congressEnabled": bool(congress),
     }
-    if congress_error and congress_error != "no_key":
-        meta["congressWarning"] = congress_error
-    elif congress_error == "no_key":
-        meta["congressWarning"] = "Set the FMP_API_KEY env var to include congressional trades."
+    if not congress:
+        meta["congressWarning"] = "Congressional data file not found or empty."
     return combined, meta
 
 

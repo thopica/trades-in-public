@@ -66,6 +66,9 @@ function render() {
             `(\u{1F3E2} ${insiderN} insider, \u{1F3DB}\u{FE0F} ${congressN} congress)`;
   if (lastMeta && lastMeta.congressEnabled === false) {
     msg += ` — congressional feed off: ${lastMeta.congressWarning || 'not configured'}`;
+  } else if (lastMeta && lastMeta.congressAsOf) {
+    const asOf = new Date(lastMeta.congressAsOf);
+    if (!isNaN(asOf)) msg += ` — congressional data as of ${asOf.toLocaleDateString()}`;
   }
   STATUS.textContent = msg;
 }

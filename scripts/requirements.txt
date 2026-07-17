@@ -1,0 +1,4 @@
+# Dependencies for the congressional-trades collector (scripts/fetch_congress.py).
+# These are only needed by the scheduled GitHub Action, NOT by the web app.
+requests==2.32.3
+pdfminer.six==20240706
