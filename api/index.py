@@ -271,6 +271,11 @@ def _build_congress_rows(items, chamber):
     return rows
 
 
+def _sanitize_error(message):
+    """Never let the API key leak into a message that reaches the browser."""
+    return re.sub(r"apikey=[^&\s]+", "apikey=***", str(message))
+
+
 def fetch_congress_trades():
     """Fetch recent House & Senate trades. Returns (rows, error_message)."""
     if not FMP_API_KEY:
@@ -282,14 +287,22 @@ def fetch_congress_trades():
         url = f"{FMP_BASE}/{endpoint}?page=0&limit=100&apikey={FMP_API_KEY}"
         try:
             resp = requests.get(url, timeout=REQUEST_TIMEOUT_SECONDS)
+            if resp.status_code in (401, 402, 403):
+                # FMP gates congressional endpoints behind a paid plan; make that
+                # explicit instead of surfacing a raw HTTP error (and its URL).
+                error = (
+                    "This FMP endpoint requires a paid plan "
+                    f"(HTTP {resp.status_code}). Congressional trades are unavailable."
+                )
+                continue
             resp.raise_for_status()
             data = resp.json()
             if isinstance(data, dict):  # FMP returns {"Error Message": ...} on failure
-                error = data.get("Error Message") or "unexpected response"
+                error = _sanitize_error(data.get("Error Message") or "unexpected response")
                 continue
             rows.extend(_build_congress_rows(data, chamber))
         except Exception as exc:
-            error = str(exc)
+            error = _sanitize_error(exc)
             continue
     return rows, error
 
