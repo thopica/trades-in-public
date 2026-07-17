@@ -35,28 +35,23 @@ REQUEST_HEADERS = {"User-Agent": SEC_CONTACT, "Accept-Encoding": "gzip, deflate"
 
 FEED_URL = (
     "https://www.sec.gov/cgi-bin/browse-edgar"
-    "?action=getcurrent&type=4&company=&dateb=&owner=include&count=100&output=atom"
+    "?action=getcurrent&type=4&company=&dateb=&owner=include&count=200&output=atom"
 )
 ATOM_NS = {"a": "http://www.w3.org/2005/Atom"}
 
 REQUEST_TIMEOUT_SECONDS = 10
 CACHE_TTL_SECONDS = 120
-MAX_FILINGS = 40   # unique filings fetched/parsed per refresh
+MAX_FILINGS = 90   # unique filings fetched/parsed per refresh
 MAX_TRADES = 50    # rows returned to the client
 FETCH_WORKERS = 5
 
-# SEC transaction codes -> human-readable labels. classify_trade() keys off the
-# first character (P -> buy, S -> sell) so the frontend colouring still works.
+# We only surface open-market purchases and sales — the transactions where an
+# insider actually chooses to buy or sell with their own money. The rest of the
+# Form 4 codes (option exercises, grants, tax withholding, gifts, etc.) are
+# compensation mechanics that aren't useful trading signal, so we skip them.
 TRANSACTION_LABELS = {
     "P": "P - Purchase",
     "S": "S - Sale",
-    "A": "A - Grant/Award",
-    "M": "M - Option Exercise",
-    "F": "F - Tax Withholding",
-    "G": "G - Gift",
-    "D": "D - Disposition",
-    "C": "C - Conversion",
-    "X": "X - Exercise",
 }
 
 _cache = {"trades": None, "fetched_at": 0}
@@ -169,11 +164,14 @@ def _parse_filing(raw_submission: str):
 
     rows = []
     for transaction in table.findall("nonDerivativeTransaction"):
-        code = _node_value(transaction, "transactionCoding/transactionCode")
+        code = _node_value(transaction, "transactionCoding/transactionCode").upper()
+        # Keep only open-market purchases (P) and sales (S); skip the rest.
+        if code not in TRANSACTION_LABELS:
+            continue
         shares = _node_value(transaction, "transactionAmounts/transactionShares")
         price = _node_value(transaction, "transactionAmounts/transactionPricePerShare")
         trade_date = _node_value(transaction, "transactionDate") or filed_date
-        trade_label = TRANSACTION_LABELS.get(code.upper(), code)
+        trade_label = TRANSACTION_LABELS[code]
         rows.append({
             "filingDate": trade_date,
             "tradeDate": trade_date,
