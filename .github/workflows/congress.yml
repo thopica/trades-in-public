@@ -1,0 +1,50 @@
+name: Update congressional trades
+
+# Collects recent House & Senate STOCK Act trades from the official government
+# disclosure systems and commits them to data/congress_trades.json. The web app
+# reads that file, so this keeps the congressional feed fresh without any
+# scraping (or API keys) at request time.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily at 06:17 UTC
+  workflow_dispatch: {}      # allow manual runs from the Actions tab
+
+# Prevent overlapping runs from racing on the commit.
+concurrency:
+  group: congress-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install collector dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Collect congressional trades
+        run: python scripts/fetch_congress.py
+
+      - name: Commit updated data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/congress_trades.json)" ]; then
+            git add data/congress_trades.json
+            git commit -m "chore(data): refresh congressional trades"
+            git push
+            echo "Committed refreshed congressional trades."
+          else
+            echo "No changes to congressional trades."
+          fi
