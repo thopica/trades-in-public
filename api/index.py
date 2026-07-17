@@ -104,8 +104,14 @@ def scrape_trades():
     return trades
 
 
-@app.route("/api/trades")
-def get_trades():
+# Vercel rewrites `/api/trades` to this function via the `/api/index`
+# destination, so the path Flask actually receives can be either `/api/trades`
+# or `/api/index` depending on how the rewrite is resolved. Matching any path
+# under `/api/` keeps the single endpoint working in both cases instead of
+# returning Werkzeug's default 404 ("The requested URL was not found").
+@app.route("/api/", defaults={"path": ""})
+@app.route("/api/<path:path>")
+def get_trades(path=""):
     now = time.time()
     if _cache["trades"] is not None and (now - _cache["fetched_at"]) < CACHE_TTL_SECONDS:
         return jsonify({"trades": _cache["trades"], "cached": True})
