@@ -1,15 +1,25 @@
 """
-Vercel Python serverless function exposing GET /api/trades.
+Vercel Flask app for the Public Trades Tracker.
 
-Scrapes OpenInsider's latest-insider-trading page server-side (avoids
-browser CORS restrictions entirely) and returns normalized JSON.
+On Vercel a Flask app is deployed as a single function that receives *all*
+requests, so this module serves both the static frontend (index.html, css, js)
+and the JSON API. The trades endpoint scrapes OpenInsider's
+latest-insider-trading page server-side (avoiding browser CORS restrictions)
+and returns normalized JSON.
 """
+import os
 import time
-from flask import Flask, jsonify
+
+from flask import Flask, jsonify, send_from_directory
 import requests
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
+
+# The static frontend lives one level up from this api/ file. Vercel bundles
+# these files with the function, so serving them from here works in production
+# and in local dev alike.
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 SOURCE_URL = "https://openinsider.com/latest-insider-trading"
 REQUEST_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; PublicTradesTracker/1.0)"}
@@ -72,12 +82,9 @@ def scrape_trades():
             continue
 
         record = {}
-        ticker_link = None
         for field, cell in zip(column_fields, cells):
             if field is None:
                 continue
-            if field == "ticker":
-                ticker_link = cell.find("a")
             record[field] = cell.get_text(strip=True)
 
         if not record.get("ticker") or not record.get("insider"):
@@ -104,11 +111,9 @@ def scrape_trades():
     return trades
 
 
-# Vercel rewrites `/api/trades` to this function via the `/api/index`
-# destination, so the path Flask actually receives can be either `/api/trades`
-# or `/api/index` depending on how the rewrite is resolved. Matching any path
-# under `/api/` keeps the single endpoint working in both cases instead of
-# returning Werkzeug's default 404 ("The requested URL was not found").
+# Match any path under /api/ (rather than only /api/trades) so the endpoint
+# keeps working regardless of how the request path is presented to the app,
+# and so requests like /api/index.py never fall through to the static handler.
 @app.route("/api/", defaults={"path": ""})
 @app.route("/api/<path:path>")
 def get_trades(path=""):
@@ -129,22 +134,21 @@ def get_trades(path=""):
     return jsonify({"trades": trades, "cached": False})
 
 
+@app.route("/")
+def serve_index():
+    return send_from_directory(PROJECT_ROOT, "index.html")
+
+
+@app.route("/css/<path:filename>")
+def serve_css(filename):
+    return send_from_directory(os.path.join(PROJECT_ROOT, "css"), filename)
+
+
+@app.route("/js/<path:filename>")
+def serve_js(filename):
+    return send_from_directory(os.path.join(PROJECT_ROOT, "js"), filename)
+
+
 if __name__ == "__main__":
-    # Local-only static file serving so `python api/index.py` mirrors how
-    # Vercel serves the frontend in production. Vercel imports `app` directly
-    # and never executes this block.
-    import os
-    from flask import send_from_directory
-
-    PROJECT_ROOT = os.path.join(os.path.dirname(__file__), "..")
-
-    @app.route("/")
-    def _serve_index():
-        return send_from_directory(PROJECT_ROOT, "index.html")
-
-    @app.route("/<path:filename>")
-    def _serve_static(filename):
-        return send_from_directory(PROJECT_ROOT, filename)
-
     print("Starting Public Trades Tracker (local dev) at http://127.0.0.1:5000")
     app.run(debug=True, port=5000)
