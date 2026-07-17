@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "trades-app",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["api/index.py"],
+      "port": 5000
+    }
+  ]
+}

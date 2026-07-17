@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(env)",
+      "Bash(python -c \"import requests; r = requests.get\\('https://httpbin.org/get', timeout=8\\); print\\(r.status_code\\)\")",
+      "Bash(python -m py_compile api/index.py)",
+      "Bash(python3)",
+      "Bash(python \"C:/Users/meistert/AppData/Local/Temp/claude/C--Users-meistert-Downloads-coding-trading/a250e737-bc11-4535-8a00-31c4b4eaa467/scratchpad/test_parse.py\")"
+    ]
+  }
+}

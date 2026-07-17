@@ -1,0 +1,24 @@
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.trade-buy {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.trade-sell {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.trade-neutral {
+  color: #6b7280;
+}
