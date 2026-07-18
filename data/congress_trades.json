@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-17T12:58:05+00:00",
+  "generated_at": "2026-07-18T08:11:59+00:00",
   "counts": {
-    "house": 145,
-    "senate": 126
+    "house": 149,
+    "senate": 125
   },
   "trades": [
     {
@@ -363,6 +363,20 @@
       "company": "AT&T Inc.",
       "person": "Gary C Peters",
       "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-06-26",
+      "ticker": "NVDA",
+      "company": "",
+      "person": "Cleo Fields",
+      "role": "House · LA06",
       "tradeType": "Purchase",
       "typeClass": "buy",
       "price": "",
@@ -2039,6 +2053,62 @@
       "source": "congress",
       "chamber": "House",
       "date": "2026-06-01",
+      "ticker": "GOOG",
+      "company": "",
+      "person": "Daniel Crenshaw",
+      "role": "House · TX02",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-06-01",
+      "ticker": "AMZN",
+      "company": "",
+      "person": "Daniel Crenshaw",
+      "role": "House · TX02",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-06-01",
+      "ticker": "AAPL",
+      "company": "",
+      "person": "Daniel Crenshaw",
+      "role": "House · TX02",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-06-01",
+      "ticker": "META",
+      "company": "",
+      "person": "Daniel Crenshaw",
+      "role": "House · TX02",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-06-01",
       "ticker": "CHKP",
       "company": "",
       "person": "Thomas H. Kean Jr",
@@ -2636,20 +2706,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-05-13",
-      "ticker": "AESI",
-      "company": "",
-      "person": "Chip Roy",
-      "role": "House · TX21",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$100,001 -$250,000"
     },
     {
       "source": "congress",
@@ -3471,20 +3527,6 @@
       "company": "Microsoft Corporation - Common Stock",
       "person": "John Boozman",
       "role": "Senate (Joint)",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-01",
-      "ticker": "WFC",
-      "company": "Wells Fargo & Company Common Stock",
-      "person": "A. Mitchell McConnell, Jr.",
-      "role": "Senate (Spouse)",
       "tradeType": "Purchase",
       "typeClass": "buy",
       "price": "",
