@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T09:20:41+00:00",
+  "generated_at": "2026-08-01T08:36:04+00:00",
   "counts": {
     "house": 148,
     "senate": 152
@@ -88,6 +88,20 @@
       "price": "",
       "qty": "",
       "value": "$15,001 -$50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-07-10",
+      "ticker": "TSM",
+      "company": "",
+      "person": "Cleo Fields",
+      "role": "House · LA06",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -494,6 +508,20 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-06-29",
+      "ticker": "HONAV",
+      "company": "",
+      "person": "Kelly Louise Morrison",
+      "role": "House · MN03",
+      "tradeType": "Exchange",
+      "typeClass": "neutral",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 -$50,000"
     },
     {
       "source": "congress",
@@ -3031,34 +3059,6 @@
     },
     {
       "source": "congress",
-      "chamber": "House",
-      "date": "2026-05-06",
-      "ticker": "COR",
-      "company": "",
-      "person": "Jared Moskowitz",
-      "role": "House · FL23",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-05-06",
-      "ticker": "GILD",
-      "company": "",
-      "person": "Jared Moskowitz",
-      "role": "House · FL23",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
       "chamber": "Senate",
       "date": "2026-05-06",
       "ticker": "ETOR",
@@ -3294,34 +3294,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-31",
-      "ticker": "MMM",
-      "company": "3M Company Common Stock",
-      "person": "Tina Smith",
-      "role": "Senate (Spouse)",
-      "tradeType": "Sale (Full)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$50,001 - $100,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-31",
-      "ticker": "BRK.B",
-      "company": "Berkshire Hathaway Inc. New Common Stock",
-      "person": "Tina Smith",
-      "role": "Senate (Spouse)",
-      "tradeType": "Sale (Full)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$100,001 - $250,000"
     },
     {
       "source": "congress",
@@ -4197,6 +4169,34 @@
       "date": "2026-03-30",
       "ticker": "MSFT",
       "company": "Microsoft Corporation - Common Stock",
+      "person": "John Fetterman",
+      "role": "Senate (Child)",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "ERIE",
+      "company": "Erie Indemnity Company - Class A Common Stock",
+      "person": "John Fetterman",
+      "role": "Senate (Child)",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc. - Class C Capital Stock",
       "person": "John Fetterman",
       "role": "Senate (Child)",
       "tradeType": "Purchase",
