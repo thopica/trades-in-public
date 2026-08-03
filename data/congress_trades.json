@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T08:39:08+00:00",
+  "generated_at": "2026-08-03T10:08:32+00:00",
   "counts": {
     "house": 148,
     "senate": 152
@@ -3284,20 +3284,6 @@
     {
       "source": "congress",
       "chamber": "Senate",
-      "date": "2026-03-31",
-      "ticker": "FDS",
-      "company": "FactSet Research Systems Inc. Common Stock",
-      "person": "Shelley M Capito",
-      "role": "Senate (Spouse)",
-      "tradeType": "Sale (Full)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
       "date": "2026-03-30",
       "ticker": "WELL",
       "company": "Welltower Inc. Common Stock",
@@ -4204,6 +4190,20 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-27",
+      "ticker": "CDNS",
+      "company": "Cadence Design Systems, Inc. - Common Stock",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Sale (Full)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$50,001 - $100,000"
     }
   ]
 }
