@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T10:08:32+00:00",
+  "generated_at": "2026-08-04T09:12:17+00:00",
   "counts": {
     "house": 148,
     "senate": 152
@@ -88,6 +88,20 @@
       "price": "",
       "qty": "",
       "value": "$15,001 -$50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-07-20",
+      "ticker": "LOW",
+      "company": "Lowe's Companies, Inc. Common Stock",
+      "person": "Sheldon Whitehouse",
+      "role": "Senate",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -4190,20 +4204,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-27",
-      "ticker": "CDNS",
-      "company": "Cadence Design Systems, Inc. - Common Stock",
-      "person": "Alan Armstrong",
-      "role": "Senate",
-      "tradeType": "Sale (Full)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$50,001 - $100,000"
     }
   ]
 }
