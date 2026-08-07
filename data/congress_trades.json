@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-06T09:09:16+00:00",
+  "generated_at": "2026-08-07T07:45:24+00:00",
   "counts": {
-    "house": 161,
-    "senate": 139
+    "house": 156,
+    "senate": 144
   },
   "trades": [
     {
@@ -592,6 +592,20 @@
       "price": "",
       "qty": "",
       "value": "$100,001 -$250,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-07-01",
+      "ticker": "KO",
+      "company": "",
+      "person": "Lloyd Doggett",
+      "role": "House · TX37",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -1562,20 +1576,6 @@
     {
       "source": "congress",
       "chamber": "House",
-      "date": "2026-06-15",
-      "ticker": "GOOG",
-      "company": "",
-      "person": "Cleo Fields",
-      "role": "House · LA06",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
       "date": "2026-06-12",
       "ticker": "ABT",
       "company": "",
@@ -1716,20 +1716,6 @@
     {
       "source": "congress",
       "chamber": "House",
-      "date": "2026-06-11",
-      "ticker": "MSFT",
-      "company": "",
-      "person": "Cleo Fields",
-      "role": "House · LA06",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
       "date": "2026-06-10",
       "ticker": "INTU",
       "company": "",
@@ -1810,34 +1796,6 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-06-10",
-      "ticker": "GD",
-      "company": "",
-      "person": "Dwight Evans",
-      "role": "House · PA03",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-06-10",
-      "ticker": "INTC",
-      "company": "",
-      "person": "Dwight Evans",
-      "role": "House · PA03",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -2345,20 +2303,6 @@
     },
     {
       "source": "congress",
-      "chamber": "House",
-      "date": "2026-06-04",
-      "ticker": "QNT",
-      "company": "",
-      "person": "Cleo Fields",
-      "role": "House · LA06",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
       "chamber": "Senate",
       "date": "2026-06-04",
       "ticker": "BSX",
@@ -2720,20 +2664,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-05-28",
-      "ticker": "TCNNF",
-      "company": "",
-      "person": "Greg Stanton",
-      "role": "House · AZ04",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$100,001 -$250,000"
     },
     {
       "source": "congress",
@@ -4204,6 +4134,76 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "CIEN",
+      "company": "Ciena Corporation Common Stock",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "CHKP",
+      "company": "Check Point Software Technologies Ltd. - Ordinary Shares",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "BTI",
+      "company": "British American Tobacco Industries, p.l.c. Common Stock ADR",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "SAN",
+      "company": "Banco Santander, S.A. Sponsored ADR (Spain)",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "BBVA",
+      "company": "Banco Bilbao Vizcaya Argentaria S.A. Common Stock",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
     }
   ]
 }
