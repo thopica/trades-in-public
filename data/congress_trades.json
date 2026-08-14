@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T07:57:15+00:00",
+  "generated_at": "2026-08-14T07:53:47+00:00",
   "counts": {
     "house": 126,
     "senate": 174
@@ -18,6 +18,34 @@
       "price": "",
       "qty": "",
       "value": "$15,001 -$50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-05",
+      "ticker": "OGN",
+      "company": "",
+      "person": "Kevin Hern",
+      "role": "House · OK01",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-05",
+      "ticker": "VSNT",
+      "company": "",
+      "person": "Kevin Hern",
+      "role": "House · OK01",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -1093,20 +1121,6 @@
       "role": "House · TX37",
       "tradeType": "Purchase",
       "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-01",
-      "ticker": "FLL",
-      "company": "",
-      "person": "Susie Lee",
-      "role": "House · NV03",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
@@ -2227,20 +2241,6 @@
       "role": "House · NJ07",
       "tradeType": "Purchase",
       "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-06-01",
-      "ticker": "FLL",
-      "company": "",
-      "person": "Susie Lee",
-      "role": "House · NV03",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
