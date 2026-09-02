@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T11:44:14+00:00",
+  "generated_at": "2026-09-02T11:24:50+00:00",
   "counts": {
     "house": 117,
     "senate": 183
@@ -2920,20 +2920,6 @@
     {
       "source": "congress",
       "chamber": "Senate",
-      "date": "2026-04-02",
-      "ticker": "TBLL",
-      "company": "Invesco Short Term Treasury ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
       "date": "2026-03-31",
       "ticker": "NVS",
       "company": "Novartis AG Common Stock",
@@ -4204,6 +4190,20 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-27",
+      "ticker": "UNH",
+      "company": "UnitedHealth Group Incorporated Common Stock (DE)",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
     }
   ]
 }
