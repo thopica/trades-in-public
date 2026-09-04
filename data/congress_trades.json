@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-03T11:21:19+00:00",
+  "generated_at": "2026-09-04T11:24:33+00:00",
   "counts": {
-    "house": 132,
-    "senate": 168
+    "house": 134,
+    "senate": 166
   },
   "trades": [
     {
@@ -88,6 +88,34 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-18",
+      "ticker": "AAPL",
+      "company": "",
+      "person": "John J Mr McGuire III",
+      "role": "House · VA05",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-18",
+      "ticker": "NVDA",
+      "company": "",
+      "person": "John J Mr McGuire III",
+      "role": "House · VA05",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -205,6 +233,20 @@
       "source": "congress",
       "chamber": "House",
       "date": "2026-08-13",
+      "ticker": "AAPL",
+      "company": "",
+      "person": "Cleo Fields",
+      "role": "House · LA06",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-13",
       "ticker": "BA",
       "company": "",
       "person": "Kevin Hern",
@@ -308,6 +350,20 @@
       "person": "Sheldon Whitehouse",
       "role": "Senate (Spouse)",
       "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-12",
+      "ticker": "ALL",
+      "company": "",
+      "person": "Michael Rulli",
+      "role": "House · OH06",
+      "tradeType": "Sale",
       "typeClass": "sell",
       "price": "",
       "qty": "",
@@ -452,6 +508,20 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-07",
+      "ticker": "EQIX",
+      "company": "",
+      "person": "Michael Rulli",
+      "role": "House · OH06",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -1418,48 +1488,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-20",
-      "ticker": "BAC",
-      "company": "",
-      "person": "James A. Himes",
-      "role": "House · CT04",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-20",
-      "ticker": "XOM",
-      "company": "",
-      "person": "James A. Himes",
-      "role": "House · CT04",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$15,001 -$50,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-20",
-      "ticker": "HD",
-      "company": "",
-      "person": "James A. Himes",
-      "role": "House · CT04",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$15,001 -$50,000"
     },
     {
       "source": "congress",
@@ -4169,34 +4197,6 @@
       "date": "2026-03-27",
       "ticker": "WYNN",
       "company": "Wynn Resorts, Limited - Common Stock",
-      "person": "Alan Armstrong",
-      "role": "Senate",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-27",
-      "ticker": "WDC",
-      "company": "Western Digital Corporation - Common Stock",
-      "person": "Alan Armstrong",
-      "role": "Senate",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-27",
-      "ticker": "WDAY",
-      "company": "Workday, Inc. - Class A Common Stock",
       "person": "Alan Armstrong",
       "role": "Senate",
       "tradeType": "Purchase",
