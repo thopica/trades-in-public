@@ -1,10 +1,24 @@
 {
-  "generated_at": "2026-09-04T11:24:33+00:00",
+  "generated_at": "2026-09-05T10:41:19+00:00",
   "counts": {
-    "house": 134,
-    "senate": 166
+    "house": 135,
+    "senate": 165
   },
   "trades": [
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-28",
+      "ticker": "VSAT",
+      "company": "",
+      "person": "Jonathan Jackson",
+      "role": "House · IL01",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
     {
       "source": "congress",
       "chamber": "House",
@@ -4183,20 +4197,6 @@
       "date": "2026-03-27",
       "ticker": "YUM",
       "company": "Yum! Brands, Inc.",
-      "person": "Alan Armstrong",
-      "role": "Senate",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-03-27",
-      "ticker": "WYNN",
-      "company": "Wynn Resorts, Limited - Common Stock",
       "person": "Alan Armstrong",
       "role": "Senate",
       "tradeType": "Purchase",
