@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T11:25:16+00:00",
+  "generated_at": "2026-09-09T11:30:11+00:00",
   "counts": {
     "house": 169,
     "senate": 131
@@ -3634,20 +3634,6 @@
     {
       "source": "congress",
       "chamber": "Senate",
-      "date": "2026-04-23",
-      "ticker": "CTVA",
-      "company": "Corteva, Inc. Common Stock",
-      "person": "Gary C Peters",
-      "role": "Senate",
-      "tradeType": "Sale (Full)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$15,001 - $50,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
       "date": "2026-03-31",
       "ticker": "NVS",
       "company": "Novartis AG Common Stock",
@@ -4197,6 +4183,20 @@
       "date": "2026-03-30",
       "ticker": "ING",
       "company": "ING Group, N.V. Common Stock",
+      "person": "Alan Armstrong",
+      "role": "Senate",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-03-30",
+      "ticker": "ICL",
+      "company": "ICL Group Ltd. Ordinary Shares",
       "person": "Alan Armstrong",
       "role": "Senate",
       "tradeType": "Purchase",
