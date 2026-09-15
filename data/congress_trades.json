@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-14T12:56:24+00:00",
+  "generated_at": "2026-09-15T11:50:56+00:00",
   "counts": {
-    "house": 227,
-    "senate": 73
+    "house": 233,
+    "senate": 67
   },
   "trades": [
     {
@@ -32,6 +32,48 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-27",
+      "ticker": "GOOGL",
+      "company": "",
+      "person": "Thomas H. Kean Jr",
+      "role": "House · NJ07",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-27",
+      "ticker": "JNJ",
+      "company": "",
+      "person": "Thomas H. Kean Jr",
+      "role": "House · NJ07",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-27",
+      "ticker": "MSFT",
+      "company": "",
+      "person": "Thomas H. Kean Jr",
+      "role": "House · NJ07",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 -$50,000"
     },
     {
       "source": "congress",
@@ -452,6 +494,20 @@
       "price": "",
       "qty": "",
       "value": "$50,001 -$100,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-21",
+      "ticker": "MTZ",
+      "company": "",
+      "person": "Thomas H. Kean Jr",
+      "role": "House · NJ07",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -1471,6 +1527,34 @@
       "role": "Senate (Spouse)",
       "tradeType": "Sale (Full)",
       "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-10",
+      "ticker": "AMCR",
+      "company": "",
+      "person": "Thomas H. Kean Jr",
+      "role": "House · NJ07",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-10",
+      "ticker": "LIN",
+      "company": "",
+      "person": "Thomas H. Kean Jr",
+      "role": "House · NJ07",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
@@ -4117,90 +4201,6 @@
       "role": "Senate (Spouse)",
       "tradeType": "Purchase",
       "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc. - Class C Capital Stock",
-      "person": "Jerry Moran,",
-      "role": "Senate",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "VEA",
-      "company": "Vanguard Developed Markets Index Fund - ETF Shares",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "VNQI",
-      "company": "Vanguard Global ex-U.S. Real Estate Index Fund - ETF Shares",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "LITP",
-      "company": "Sprott Lithium Miners ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "IVV",
-      "company": "iShares Core S&P 500 ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "RNWGX",
-      "company": "NEW WORLD FUND INC - Class R-6",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
