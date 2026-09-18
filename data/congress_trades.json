@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T11:48:22+00:00",
+  "generated_at": "2026-09-18T11:22:47+00:00",
   "counts": {
     "house": 220,
     "senate": 80
@@ -611,6 +611,20 @@
       "source": "congress",
       "chamber": "Senate",
       "date": "2026-08-20",
+      "ticker": "WMB",
+      "company": "Williams Companies, Inc. (The) Common Stock Option Type: Call Strike price: $75.00 Expires: 2026-08-21",
+      "person": "Alan Armstrong",
+      "role": "Senate (Joint)",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-08-20",
       "ticker": "JNJ",
       "company": "Johnson & Johnson Common Stock",
       "person": "John Boozman",
@@ -732,6 +746,20 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-08-19",
+      "ticker": "WMB",
+      "company": "Williams Companies, Inc. (The) Common Stock Option Type: Call Strike price: $75.00 Expires: 2026-08-21",
+      "person": "Alan Armstrong",
+      "role": "Senate (Joint)",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -4173,34 +4201,6 @@
       "role": "Senate (Joint)",
       "tradeType": "Sale (Partial)",
       "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "EIPI",
-      "company": "FT Energy Income Partners Enhanced Income ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "SCHP",
-      "company": "Schwab U.S. TIPS ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
