@@ -1,10 +1,38 @@
 {
-  "generated_at": "2026-09-21T12:55:42+00:00",
+  "generated_at": "2026-09-22T11:45:48+00:00",
   "counts": {
-    "house": 217,
-    "senate": 83
+    "house": 218,
+    "senate": 82
   },
   "trades": [
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-14",
+      "ticker": "ABBV",
+      "company": "",
+      "person": "Pete Sessions",
+      "role": "House · TX17",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 -$50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-14",
+      "ticker": "GOOGL",
+      "company": "",
+      "person": "Pete Sessions",
+      "role": "House · TX17",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 -$50,000"
+    },
     {
       "source": "congress",
       "chamber": "House",
@@ -32,6 +60,20 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-09-01",
+      "ticker": "WFC",
+      "company": "Wells Fargo & Company Common Stock",
+      "person": "A. Mitchell McConnell, Jr.",
+      "role": "Senate (Spouse)",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
     },
     {
       "source": "congress",
@@ -1880,20 +1922,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-08-07",
-      "ticker": "PINS",
-      "company": "",
-      "person": "Christian D. Menefee",
-      "role": "House · TX18",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$15,001 -$50,000"
     },
     {
       "source": "congress",
@@ -4173,34 +4201,6 @@
       "role": "Senate (Joint)",
       "tradeType": "Sale (Partial)",
       "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "SCHP",
-      "company": "Schwab U.S. TIPS ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-05-27",
-      "ticker": "JMBS",
-      "company": "Janus Henderson Mortgage-Backed Securities ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
