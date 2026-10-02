@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-01T13:25:33+00:00",
+  "generated_at": "2026-10-02T12:43:51+00:00",
   "counts": {
-    "house": 252,
-    "senate": 48
+    "house": 250,
+    "senate": 50
   },
   "trades": [
     {
@@ -382,6 +382,48 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-09-04",
+      "ticker": "JPM",
+      "company": "JP Morgan Chase & Co. Common Stock",
+      "person": "Sheldon Whitehouse",
+      "role": "Senate (Spouse)",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-09-04",
+      "ticker": "ADI",
+      "company": "Analog Devices, Inc. - Common Stock",
+      "person": "Sheldon Whitehouse",
+      "role": "Senate (Spouse)",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-09-04",
+      "ticker": "V",
+      "company": "Visa Inc.",
+      "person": "Sheldon Whitehouse",
+      "role": "Senate (Spouse)",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -2794,34 +2836,6 @@
     {
       "source": "congress",
       "chamber": "House",
-      "date": "2026-08-05",
-      "ticker": "OGN",
-      "company": "",
-      "person": "Kevin Hern",
-      "role": "House · OK01",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-08-05",
-      "ticker": "VSNT",
-      "company": "",
-      "person": "Kevin Hern",
-      "role": "House · OK01",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
       "date": "2026-08-04",
       "ticker": "APG",
       "company": "",
@@ -4190,20 +4204,6 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-06-25",
-      "ticker": "MU",
-      "company": "Micron Technology, Inc. - Common Stock",
-      "person": "Sheldon Whitehouse",
-      "role": "Senate",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
     }
   ]
 }
