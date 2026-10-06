@@ -1,10 +1,24 @@
 {
-  "generated_at": "2026-10-05T14:49:46+00:00",
+  "generated_at": "2026-10-06T13:23:54+00:00",
   "counts": {
-    "house": 257,
-    "senate": 43
+    "house": 260,
+    "senate": 40
   },
   "trades": [
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-28",
+      "ticker": "MSFT",
+      "company": "",
+      "person": "Michael Rulli",
+      "role": "House · OH06",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
     {
       "source": "congress",
       "chamber": "House",
@@ -517,6 +531,34 @@
       "company": "Visa Inc.",
       "person": "Sheldon Whitehouse",
       "role": "Senate (Spouse)",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-03",
+      "ticker": "GS",
+      "company": "",
+      "person": "Michael Rulli",
+      "role": "House · OH06",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-03",
+      "ticker": "WFC",
+      "company": "",
+      "person": "Michael Rulli",
+      "role": "House · OH06",
       "tradeType": "Sale (Partial)",
       "typeClass": "sell",
       "price": "",
@@ -4162,48 +4204,6 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-07-02",
-      "ticker": "CVX",
-      "company": "Chevron Corporation Common Stock",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-07-02",
-      "ticker": "SPYM",
-      "company": "Tradr 2X Long SPY Monthly ETF",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-06-30",
-      "ticker": "NVDA",
-      "company": "NVIDIA Corporation - Common Stock",
-      "person": "Sheldon Whitehouse",
-      "role": "Senate",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$15,001 - $50,000"
     }
   ]
 }
