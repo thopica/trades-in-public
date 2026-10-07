@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-06T13:23:54+00:00",
+  "generated_at": "2026-10-07T13:31:57+00:00",
   "counts": {
-    "house": 260,
-    "senate": 40
+    "house": 262,
+    "senate": 38
   },
   "trades": [
     {
@@ -74,6 +74,20 @@
       "price": "",
       "qty": "",
       "value": "$100,001 -$250,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-17",
+      "ticker": "HD",
+      "company": "",
+      "person": "Lloyd Doggett",
+      "role": "House · TX37",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -289,6 +303,20 @@
       "source": "congress",
       "chamber": "House",
       "date": "2026-09-11",
+      "ticker": "PPG",
+      "company": "",
+      "person": "Lloyd Doggett",
+      "role": "House · TX37",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-11",
       "ticker": "OKE",
       "company": "",
       "person": "Kevin Hern",
@@ -312,6 +340,20 @@
       "price": "",
       "qty": "",
       "value": "$100,001 - $250,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-10",
+      "ticker": "IBM",
+      "company": "",
+      "person": "Lloyd Doggett",
+      "role": "House · TX37",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -382,6 +424,20 @@
       "price": "",
       "qty": "",
       "value": "$100,001 - $250,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-08",
+      "ticker": "JNJ",
+      "company": "",
+      "person": "Lloyd Doggett",
+      "role": "House · TX37",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
     },
     {
       "source": "congress",
@@ -4143,62 +4199,6 @@
       "company": "",
       "person": "Thomas H. Kean Jr",
       "role": "House · NJ07",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-02",
-      "ticker": "AVAV",
-      "company": "",
-      "person": "Gilbert Cisneros",
-      "role": "House · CA31",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-02",
-      "ticker": "XOM",
-      "company": "",
-      "person": "Michael Patrick Guest",
-      "role": "House · MS03",
-      "tradeType": "Exchange",
-      "typeClass": "neutral",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-07-02",
-      "ticker": "TRV",
-      "company": "The Travelers Companies, Inc. Common Stock",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
-      "tradeType": "Sale (Full)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "Senate",
-      "date": "2026-07-02",
-      "ticker": "EL",
-      "company": "Estee Lauder Companies, Inc. (The) Common Stock",
-      "person": "John Boozman",
-      "role": "Senate (Joint)",
       "tradeType": "Purchase",
       "typeClass": "buy",
       "price": "",
