@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T11:37:05+00:00",
+  "generated_at": "2026-10-16T11:31:14+00:00",
   "counts": {
-    "house": 270,
-    "senate": 30
+    "house": 269,
+    "senate": 31
   },
   "trades": [
     {
@@ -569,6 +569,20 @@
       "source": "congress",
       "chamber": "House",
       "date": "2026-09-23",
+      "ticker": "LMT",
+      "company": "",
+      "person": "Kevin Hern",
+      "role": "House · OK01",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-23",
       "ticker": "MRSH",
       "company": "",
       "person": "Kevin Hern",
@@ -606,6 +620,20 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-22",
+      "ticker": "AZO",
+      "company": "",
+      "person": "Richard W. Allen",
+      "role": "House · GA12",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 -$50,000"
     },
     {
       "source": "congress",
@@ -687,6 +715,34 @@
       "role": "House · CA31",
       "tradeType": "Sale (Partial)",
       "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-18",
+      "ticker": "COST",
+      "company": "",
+      "person": "Richard W. Allen",
+      "role": "House · GA12",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-18",
+      "ticker": "BRK.B",
+      "company": "",
+      "person": "Richard Dean Dr McCormick",
+      "role": "House · GA06",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
@@ -2570,20 +2626,6 @@
     {
       "source": "congress",
       "chamber": "House",
-      "date": "2026-08-24",
-      "ticker": "GOOGL",
-      "company": "",
-      "person": "Michael Rulli",
-      "role": "House · OH06",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$50,001 -$100,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
       "date": "2026-08-21",
       "ticker": "MTZ",
       "company": "",
@@ -3577,62 +3619,6 @@
     },
     {
       "source": "congress",
-      "chamber": "House",
-      "date": "2026-08-11",
-      "ticker": "ACN",
-      "company": "",
-      "person": "Kelly Louise Morrison",
-      "role": "House · MN03",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-08-11",
-      "ticker": "ACN",
-      "company": "",
-      "person": "Kelly Louise Morrison",
-      "role": "House · MN03",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$15,001 -$50,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-08-11",
-      "ticker": "MBGL",
-      "company": "",
-      "person": "Kelly Louise Morrison",
-      "role": "House · MN03",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-08-11",
-      "ticker": "SOLS",
-      "company": "",
-      "person": "Kelly Louise Morrison",
-      "role": "House · MN03",
-      "tradeType": "Sale",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
       "chamber": "Senate",
       "date": "2026-08-11",
       "ticker": "NVDA",
@@ -4204,6 +4190,20 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "Senate",
+      "date": "2026-07-21",
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation - Common Stock",
+      "person": "Shelley M Capito",
+      "role": "Senate (Spouse)",
+      "tradeType": "Sale (Partial)",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 - $50,000"
     }
   ]
 }
