@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T13:27:08+00:00",
+  "generated_at": "2026-10-20T11:45:58+00:00",
   "counts": {
     "house": 264,
     "senate": 36
@@ -760,6 +760,20 @@
       "price": "",
       "qty": "",
       "value": "$1,001 - $15,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-09-18",
+      "ticker": "NOKBF",
+      "company": "",
+      "person": "Laurel Lee",
+      "role": "House · FL15",
+      "tradeType": "Purchase",
+      "typeClass": "buy",
+      "price": "",
+      "qty": "",
+      "value": "$15,001 -$50,000"
     },
     {
       "source": "congress",
@@ -2599,6 +2613,20 @@
       "source": "congress",
       "chamber": "House",
       "date": "2026-08-24",
+      "ticker": "BAC",
+      "company": "",
+      "person": "Laurel Lee",
+      "role": "House · FL15",
+      "tradeType": "Sale",
+      "typeClass": "sell",
+      "price": "",
+      "qty": "",
+      "value": "$50,001 -$100,000"
+    },
+    {
+      "source": "congress",
+      "chamber": "House",
+      "date": "2026-08-24",
       "ticker": "LAMR",
       "company": "",
       "person": "Gilbert Cisneros",
@@ -4176,34 +4204,6 @@
       "price": "",
       "qty": "",
       "value": "$15,001 - $50,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-17",
-      "ticker": "PGR",
-      "company": "",
-      "person": "Gilbert Cisneros",
-      "role": "House · CA31",
-      "tradeType": "Sale (Partial)",
-      "typeClass": "sell",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
-    },
-    {
-      "source": "congress",
-      "chamber": "House",
-      "date": "2026-07-17",
-      "ticker": "TTD",
-      "company": "",
-      "person": "Gilbert Cisneros",
-      "role": "House · CA31",
-      "tradeType": "Purchase",
-      "typeClass": "buy",
-      "price": "",
-      "qty": "",
-      "value": "$1,001 - $15,000"
     }
   ]
 }
